@@ -16,6 +16,18 @@
 // };
 
 / {
+    vbatt: vbatt {
+        compatible = "zmk,battery-voltage-divider";
+        label = "BATTERY";
+        io-channels = <&adc 7>;
+        output-ohms = <1000000>;    /* Resistor de 1M */
+        full-ohms = <2000000>;      /* 1M + 1M = 2M */
+    };
+
+    chosen {
+        zmk,battery = &vbatt;
+    };
+
     behaviors {  
         shiftorcaps: shiftorcaps {
             compatible = "zmk,behavior-tap-dance";
