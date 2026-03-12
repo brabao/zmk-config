@@ -19,12 +19,12 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: corne_left
     # cmake-args: -DCONFIG_ZMK_BOARD_COMPAT=y
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: corne_right
     # cmake-args: -DCONFIG_ZMK_BOARD_COMPAT=y
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: settings_reset
     # cmake-args: -DCONFIG_ZMK_BOARD_COMPAT=y
