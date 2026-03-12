@@ -10,6 +10,7 @@
 
 / {
     /* Mata a configuração padrão para evitar conflito com o SuperMini */
+/*
     /delete-node/ vbatt;
 
     vbatt: vbatt {
@@ -23,6 +24,7 @@
     chosen {
         zmk,battery = &vbatt;
     };
+        */
     
     behaviors {  
         shiftorcaps: shiftorcaps {
